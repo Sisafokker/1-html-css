@@ -1,0 +1,186 @@
+/*  HERO SECTION STYLES */
+.hero-section {
+    background-image: url(../images/backgrounds/fries-hero-bg.jpg);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed; /*Image to be fixed*/
+    background-position: center; /*Centering the image*/
+    background-repeat: no-repeat; /*By default they repeat.*/
+    background-size: cover; /*Shrinks and Crops the image to mantain the aspect ratio*/
+}
+
+.hero-section > .top-heading{
+    padding: 1px, 20px;
+    background-color: #11122b;
+    font-size: 16px;
+    color: #cbcbcb;
+    width: 290px;
+    border-radius: 2px; 
+}
+
+.hero-section > .bottom-heading{
+    background-color: #cea135;
+    font-size: 14px;
+    color: #11122b;
+    width: 290px;
+    padding: 1px, 20px;
+    margin-top: 15px;
+    width: 107px;
+    border-radius: 2px;
+
+}
+
+/* FEATURES SECTION STYLES */
+
+.features-section {
+    height: 400px;
+    background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
+    background-color: #cea135;
+    border-top: 10px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center; /*Horizontal*/
+    align-items: center; /*Vertical*/
+    font-family: "Ubuntu Condensed", sans-serif;
+    
+    /* Creating a Shadow on this Div  
+                    left  top  Transp bottom */
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section > .columns-wrapper{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section > .columns-wrapper >.column {
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.features-section > .columns-wrapper >.column:hover {
+    border-bottom: 5px solid #11122b;
+}
+
+.features-section > .columns-wrapper >.column :nth-child(1) {
+    font-size: 3em;
+}
+
+.features-section > .columns-wrapper >.column :nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 900; /* to make it BOLD / Negritas */
+    height: 50px;
+    transition: 1s;
+}
+.features-section > .columns-wrapper >.column :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+
+.features-section > .columns-wrapper >.column :nth-child(3) {
+    letter-spacing: 1.5px;
+}
+
+/* FEATURES FOR FOOTER */
+/* footer-wrapper
+        center-column
+            banner-image
+            contact-hour-wrapper
+            links-wrapper
+            social-media*/
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #11122b;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+
+}
+
+.footer-wrapper > .center-column .banner-image {
+    display: flex;
+    justify-content: center;
+/*     align-content: center;*/
+}
+.footer-wrapper > .center-column .banner-image img{
+    width: 125px;
+    height: 100%;
+}
+
+.footer-wrapper > .center-column > .contact-hour-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 5px 30px 10px 30px 
+}
+
+.footer-wrapper > .center-column > .contact-hour-wrapper > .phone{
+    text-align: right;
+    margin-right: 15px;
+}
+
+.footer-wrapper > .center-column > .contact-hour-wrapper > .hours{
+    text-align: left;
+    margin-left: 15px;
+    color: #cea135;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 75%;
+    align-self: center;
+}
+
+.footer-wrapper > .center-column .links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    padding: 10px 0px 35px 0px;
+    font-size: 0.9em;
+}
+
+.footer-wrapper > .center-column > .social-media{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 80px 10px 80px;
+}
+
+.footer-wrapper > .center-column > .social-media {
+    color:#cbcbcb
+}
+
+.footer-wrapper > .center-column > .social-media > .github-icon{
+    font-size: 1.25em;
+}
+
+.footer-wrapper > .center-column > .social-media > .twitter-icon{
+    font-size: 1.25em;
+}
+
+.footer-wrapper > .center-column > .social-media > .linkedin-icon{
+    font-size: 1.25em;
+}
+
+.footer-wrapper > .center-column > .social-media > .twitter-icon a {
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.footer-wrapper > .center-column > .social-media > .linkedin-icon a {
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.footer-wrapper > .center-column > .social-media > .github-icon a {
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.footer-wrapper > .center-column > .copyright {
+    color: grey;
+    font-size: 0.60em;
+    padding: 10px 0px 20px 0px;
+    
+}

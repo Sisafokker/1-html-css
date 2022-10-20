@@ -1,0 +1,133 @@
+<!DOCTYPE html> <!-- Declaration -->
+<html lang="en">
+<!-- // < > TAGS -->
+
+<head>
+    <!-- // Nested Head Tag: Used to define how the document is going to work
+                                        // Calls CSS Files, Custom Fonts, etc. 
+                                        // Users do not see this. -->
+
+    <meta charset="UTF-8"> <!-- // MetaTag to Define Encoding, info and rules for the document. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- // OLD. No necesary. Controls Site depending on Browser. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Device responsible (Mobile Desktop) -->
+    <title>Demo website</title> <!-- // Name that appears in the browser tab. -->
+    <link code here code here /> <!-- // This is a selfClosing TAG. -->
+
+    <!-- Custome Fonts from fonts.google.com -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Installing Font Awesome to be able to use Icons / Emojis / etc. It has to go above the Styles tag -->
+    <!--     <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.7.1/css/all.css">
+ -->
+    <script src="https://kit.fontawesome.com/69c516a904.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Define EMBEDED styles for different h1 & h2 etc. 
+                LIMITATION: Applied individually for each page in your site
+                Carefull: it overrides the Imported CSS if its declared BELOW the
+                <link rel..... /> line.
+                This is why its called CASCADING STYLE SHEET
+         h2 {
+            color: blue;
+            text-decoration: underline;
+        }
+        */
+    </style>
+
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- For Importing CSS files
+                                                Just repeat this line on each page
+                                                of your project -->
+    <link rel="stylesheet" href="styles/nav.css"> <!-- Import Override.. its called after -->
+
+</head>
+
+<!-- For CONTENT -->
+
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-column">
+            <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-hour-wrapper">
+                <div class="phone">
+                    722 748 125
+                </div>
+                <div class="hours">
+                    8AM to 8PM
+                </div>
+            </div>
+        </div>
+
+        <!-- Link Nav Wrapper -->
+        <div class="center-column">
+            <div class="banner-image">
+                <!-- Below: Image. We will control it in Styles. -->
+                <img src="images/logos/decamp-fantastic-fries-logo-white.png" alt="Logo">
+
+                <!-- Below: Image with size controls. -->
+                <!-- <img src="decamp-fantastic-fries-logo-white.png" alt="Logo" width="220" height="100%"> -->
+            </div>
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="..index.html"> Home.</a>
+                </div>
+                <div class="nav-link">
+                    <a href="..about.html"> About.</a>
+                </div>
+                <div class="nav-link">
+                    <a href="..menu.html"> Menu.</a>
+                </div>
+                <div class="nav-link">
+                    <a href="..contact.html"> Contact.</a>
+                </div>
+                <div class="nav-link">
+                    <a href="demo.html"> Contact.</a>
+                </div>
+
+                <!-- External references -->
+                <div class="nav-link">
+                    <a href="https://www.eskoola.com/" target="_blank"> Eskoola.</a> <!-- in new tab -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="right-column">
+            <div class="address-wrapper">
+                <a href="contact.html">
+                    Iturrigorri 1,<br>
+                    Getxo, Basque Country
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="contact.html">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h4> DEMO </h4>
+    <br>
+    <br>
+    <h1> Hello - No CSS.</h1>
+    <br>
+    <h1 style="color: red;"> Hello - CSS inline style... no scalable...
+        but valid to override a Style???</h1>
+    <br>
+    <h2> Hello - CSS in head. and its overritten at there are two h2 tags</h1>
+        <br>
+        <h3> Hello - CSS Imported in separate file.</h3>
+
+
+        <!-- Shift Alt A ==> to add comment -->
+        <p>My first paragraph...</p>
+
+
+</body>
+
+</html>
