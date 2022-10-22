@@ -1,0 +1,62 @@
+.footer {
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;     /*Declaring this div as a Flex-box container*/
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;     /* Vertical alignment */
+    flex-direction: column;  /* to STACK divs on top of each other */
+    height: 400px;
+    margin-top: -4px   /* Margins can be negative... It will run over the previous div */
+}
+
+.footer > .logo-footer img {
+    width: 180px;
+    height: 100%;
+    filter: opacity(0.5); /* To control IMAGE Blur, Brightness, Shadows, etc */
+}
+
+.footer > .footer-phone-hours span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+.footer > .footer-phone-hours > .hours {
+    font-size: 0.85em;
+    color: #cea135;
+    text-transform: lowercase; /* Change the CASE of text */
+}
+
+.footer > .links-wrapper {
+    /* There is a generic .links-wrapper in other CSS file */
+    /* We are adding to that generic one, but now only for the footer */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    font-size: 0.9em;
+}
+
+.footer > .social-media-icons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 300px;
+} 
+
+.footer > .social-media-icons-wrapper a{
+    font-size: 1.35em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.footer > .social-media-icons-wrapper a:hover{
+    color: #cea135
+}
+
+.footer > .copyright-wrapper {
+    color: grey;
+    font-size: 0.60em;
+    margin-bottom: 30px;
+}

@@ -1,7 +1,6 @@
-/* Common Styles */
+/* COMMON STYLES */
 body {
     margin: 0px;
-
     /* This is saying: if Font Roboto is no available, use the sans-serif font  */
     font-family: 'Roboto', sans-serif;
 }
@@ -11,65 +10,49 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
 
-.footer {
-    background-color: #11122b;
-    color: #cbcbcb;
-    font-family: "Ubuntu Condensed", sans-serif;
-    display: flex;     /*Declaring this div as a Flex-box container*/
-    justify-content: center; /* Horizontal alignment */
-    align-items: center;     /* Vertical alignment */
-    flex-direction: column;  /* to STACK divs on top of each other */
-    height: 400px;
-    margin-top: -4px   /* Margins can be negative... It will run over the previous div */
+
+
+/*MY INITIAL VERSION*/
+.menu-container {
+    width: 800;
+    align-content: center;
+
 }
 
-.footer > .logo-footer img {
-    width: 180px;
-    height: 100%;
-    filter: opacity(0.5); /* To control IMAGE Blur, Brightness, Shadows, etc */
-}
-
-.footer > .footer-phone-hours span {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 1em;
-    letter-spacing: 1.5px;
-}
-
-.footer > .footer-phone-hours > .hours {
-    font-size: 0.85em;
-    color: #cea135;
-    text-transform: lowercase; /* Change the CASE of text */
-}
-
-.footer > .links-wrapper {
-    /* There is a generic .links-wrapper in other CSS file */
-    /* We are adding to that generic one, but now only for the footer */
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 400px;
-    font-size: 0.9em;
-}
-
-.footer > .social-media-icons-wrapper {
+.menu-container > .two-col-section {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 25px;
-    width: 300px;
-} 
-
-.footer > .social-media-icons-wrapper a{
-    font-size: 1.35em;
-    color: #cbcbcb;
-    transition: 0.5s;
+    justify-content: center;
 }
 
-.footer > .social-media-icons-wrapper a:hover{
-    color: #cea135
+.menu-container > .two-col-section > .image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 400px; 
+    grid-template-columns: 2fr;
+    /*1 Fraction Unit => All space available*/
+    grid-gap: 25px;
+}
+.menu-container > .two-col-section > .image-wrapper img {
+    width: 400px;
+    height: 100%;
 }
 
-.footer > .copyright-wrapper {
-    color: grey;
-    font-size: 0.60em;
-    margin-bottom: 30px;
+.menu-container > .two-col-section > .description-wrapper{
+    width: 400px; 
+    margin-left: 30px;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.25em;       /* Separacion entre lineas... podria ser: 30px; */
+    letter-spacing: 1px;    /* Separacion entre caracteres */    
+}
+
+
+.menu-container > .two-col-section > .description-wrapper > .title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 26px;
+    color: #cea135;
+    font-family: "Ubuntu Condensed", sans-serif;
 }

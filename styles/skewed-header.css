@@ -1,0 +1,53 @@
+/* SKEWED HEADERS */
+.skewed-header {
+    position: relative; /* When you want the child to use "position: Absolute", 
+    the parent Div must have "position: relative. and position:absolute we use it
+    when we want text over the image." */
+    height: 400px;
+    overflow: hidden;
+}
+
+.skewed-header > .header-bg {
+    position: absolute; /* position:absolute we use it
+    when we want text over the image." */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    /* Skewing the image */
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(0.6);
+}
+
+.skewed-header > .skewed-header-wrapper {
+    position: absolute; /* to be on top of the image. */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper >.skewed-header-content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper >.skewed-header-content > .heading-wrapper{
+    /* Generating the Yellow box around the ABOUT US text*/
+    background-color: #cea135;
+    color: #11122b;
+        /* rounding the bottom angles of the yellow box */
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+        /* other properties of the yellow box */
+    width: 175;
+    padding: 10px;
+    text-align: center;
+}

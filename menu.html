@@ -1,22 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Menu</title>
-  
-    <link rel="stylesheet" href="styles2.css"> <!-- Import Override.. its called after -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu Page</title>
+
+    <!-- Custome Fonts from fonts.google.com -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Custom Icons Font Awesome -->
+    <script src="https://kit.fontawesome.com/69c516a904.js" crossorigin="anonymous"></script>
+
+    <style>
+    </style>
+
+    <!-- For Importing CSS files -->
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/skewed-header.css">
+    <link rel="stylesheet" href="styles/square-grid.css">
+    <link rel="stylesheet" href="styles/page-container.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+
 
 </head>
+
 <body>
-    <h4>MENU</h4>
-     <!-- CREATING NAV BAR -->
-     <a href ="index.html"> Home...</a>
-     <a href ="about.html"> About...</a>
-     <a href ="menu.html"> Menu...</a>
-     <a href ="contact.html"> Contact...</a>
-     <a href ="pages/demo.html"> Demo...</a>
+    <div class="skewed-header">
+
+        <div class="header-bg" style="background-image: url('images/backgrounds/menu.jpg');"></div>>
+        <!-- In this case, we want to use an image with InLine CSS. It will make life easier -->
+        <div class="skewed-header-wrapper">
+
+            <div class="skewed-header-content">
+                <div class="heading-wrapper">
+                    <h1>Our Menu</h1>
+                </div>
+
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        <a href="index.html"> Home.</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="about.html"> About.</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="menu.html"> Menu.</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="contact.html"> Contact.</a>
+                    </div>
+
+                    <!-- External references -->
+                    <div class="nav-link">
+                        <a href="https://www.eskoola.com/" target="_blank"> Eskoola.</a> <!-- in new tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- INSERT SQUARES HERE -->
+    <div class="squares-wrapper">
+        <!-- Naming convention  "plurals-wrapper" -->
+        <div class="squares">
+            <!-- Naming convention  "plurals" -->
+            <div class="square">
+                <!-- Naming convention  "unit" -->
+                <div class="img-wrapper">
+                    <img src="images/squares/fries-sq-1.jpg" alt="Fries">
+                </div>
+                <div class="square-text-wrapper">
+                    <!-- Anchor Link Similar to Google Docs Markers -->
+                    <a class="anchor-link" href="#spicy" name="spicy">
+                        <h1>Spicy</h1>
+                    </a>
+                    <ol>
+                        <!-- OrderedList Numbered Bullet Points -->
+                        <li>Opdafdes lorem ipsum dolor sit amet consectetur, adipisicing lorem ipsum dolor elit.</li>
+                        <li>Bea Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                        <li>Joaquin Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li>Ane ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                    </ol>
+
+                </div>
+            </div>
+
+            <div class="square">
+                <!-- Naming convention  "unit" -->
+                <div class="square-text-wrapper">
+                    <a class="anchor-link" href="#mild" name="mild">
+                        <h1>Mild</h1>
+                    </a>
+                    <ul>
+                        <!-- UnOrderedList: Normal Bullet points -->
+                        <li>Opdafdes lorem ipsum dolor sit amet consectetur, adipisicing lorem ipsum dolor elit.</li>
+                        <li>Bea Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                        <li>Joaquin Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li>Ane ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="images/squares/fries-sq-2.jpg" alt="More Fries">
+                </div>
+            </div>
+
+            <div class="square">
+                <!-- Naming convention  "unit" -->
+                <div class="img-wrapper">
+                    <img src="images/squares/fries-sq-1.jpg" alt="Bucket with Fries">
+                </div>
+                <div class="square-text-wrapper">
+                    <a class="anchor-link" href="#kids" name="kids">
+                        <h1>Kids</h1>
+                    </a>
+                    <ul>
+                        <li>Opdafdes lorem ipsum dolor sit amet consectetur, adipisicing lorem ipsum dolor elit.</li>
+                        <li>Bea Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                        <li>Joaquin Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li>Ane ipsum dolor sit amet consectetur adipisicing elit. Animi?</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spacer50"></div>
+
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="images/logos/decamp-fantastic-fries-logo-white.png" alt="Logo">
+        </div>
+
+        <div class="footer-phone-hours">
+            <span class="phone">
+                722 748 125
+            </span>
+            <span class="hours">
+                8AM to 8PM
+            </span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html"> Home.</a>
+            </div>
+            <div class="nav-link">
+                <a href="about.html"> About.</a>
+            </div>
+            <div class="nav-link">
+                <a href="menu.html"> Menu.</a>
+            </div>
+            <div class="nav-link">
+                <a href="contact.html"> Contact.</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="https://github.com/Sisafokker" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/hoakeen_com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joaquinpagliettini/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            &copy; 2022 Hoakeen.com | CC NC &#127137; &spades;
+        </div>
+    </div>
 
 </body>
+
 </html>

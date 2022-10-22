@@ -1,0 +1,28 @@
+/* HELPERS STYLES */
+/* We pre-create the spaces and then we can call them in the html when we need it */
+.spacer100 {
+    height: 100px;
+    width: 100%;
+}
+
+.spacer50 {
+    height: 50px;
+    width: 100%;
+}
+
+.anchor-link {
+    text-decoration: none;
+}
+
+.anchor-link:focus {  
+    /* Para evitar que se forme un borde alrededor del objecto cuando se presiona sobre el*/
+    outline: none;
+}
+
+.anchor-link h1::after{ 
+    /* After Seudo Selectors ICON from Font Awesome */
+    /* Hability to put content before or after content written in the HTML file*/
+    font-family: "Font Awesome 5 Free"; /* MANDATORY to add this reference */
+    content: " \f0c1"; /* \+uniCode without blank spaces after the "\" */
+    font-weight: 900; /* MANDATORY to add a Weight */
+}

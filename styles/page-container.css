@@ -1,0 +1,31 @@
+/* PAGE CONTAINER STYLES */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper {
+    width: 1000px;
+    margin-top: -30px;
+}
+
+.page-container > .content-wrapper > #chef {
+    border: #cea135 2px solid;
+    width: 45%;
+    margin: 23px 25px 20px 0px;
+    float: left; /* Content FLOWING around the image */    
+}
+
+.page-container > .content-wrapper > #chef2 {
+    border: #cea135 2px solid;
+    margin: 10px 0px 10px 25px;
+    width: 45%;
+    margin: 25px;
+    float: right /* Content FLOWING around the image */
+}
+
+.page-container > .content-wrapper p{
+    text-align: justify;
+    line-height: 2em;       /* Separacion entre lineas... podria ser: 30px; */
+    letter-spacing: 2px;    /* Separacion entre caracteres */
+}
