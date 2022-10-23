@@ -1,0 +1,18 @@
+.form > .form-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form input {
+    font-size: 1.5rem; /* It gives you access to the root value, rather than the current value (that could have been modified previously to another CSS properties */
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2ren;
+    border-radius: 2px;
+    border: none; /* To remove the ugly grey edges on each form box */
+    border-bottom: 3px solid #11122b; /* Adding a bottom edge only*/
+    width: 100%;
+    display: block; /* This is the default value for all divs, but we need it in this case to do the animation */
+    transition: all 0.3s; /* Capturing ALL transition styles */
+}
+
