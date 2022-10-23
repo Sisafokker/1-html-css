@@ -1,0 +1,39 @@
+/* CONDITIONAL CSS when screen size  is below 615px wide  */
+@media (max-width: 615px) {
+    .navigation-wrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* Using FlexBox we can change the orders of the divs */
+    .navigation-wrapper > .left-column {
+        order: 2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Using FlexBox we can change the orders of the divs */
+    .navigation-wrapper > .center-column {
+        order: 1;
+        width: 100%;
+    }
+
+    /* Using FlexBox we can change the orders of the divs */
+    .navigation-wrapper > .right-column {
+        order: 3;
+        margin-top: 15px;
+    }
+
+    .links-wrapper {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .links-wrapper > .nav-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+}
+
