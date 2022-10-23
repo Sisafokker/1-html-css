@@ -1,4 +1,4 @@
-input {
-    color: pink;
-    font-size: 15px;
+.card {
+    letter-spacing: 2px;
+    color: grey;
 }

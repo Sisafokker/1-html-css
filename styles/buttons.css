@@ -8,3 +8,12 @@
     outline: none; /* No outline when clicked */
     transition: 0.3s;
 }
+
+.btn:active { /* User has cliked on the button */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.center-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}

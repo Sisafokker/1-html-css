@@ -1,13 +1,13 @@
 .form > .form-group {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .form input {
     font-size: 1.25rem; /* It gives you access to the root value, rather than the current value (that could have been modified previously to another CSS properties */
     font-family: inherit;
     color: inherit;
-    padding: 1.5rem 2ren;
+    padding: 1.5rem 2rem;
     border-radius: 2px;
     border: none; /* To remove the ugly grey edges on each form box */
     border-bottom: 3px solid #11122b; /* Adding a bottom edge only*/
@@ -48,6 +48,11 @@
     color: #11122b;
 }
 
+/* Modify the placeholder when the input:focus */
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
 .form label {
     font-size: 1.1rem;
     font-weight: 700;
@@ -56,7 +61,16 @@
     display: block; /* Allows to treat this element as a div, rather than a label */
     transition: all 0.3s;
     color: #cea135;
-    /* Visibility */
-    /* Opacity */
+    /* Hidding before they are selected. */
+    visibility: hidden; /* Visibility values*/
+    opacity: 0; /* Opacity values for transparency*/
 }
 
+
+/* Modifiying the Label when the Input box is selected */
+.form input:focus + label, .form textarea:focus + label {
+    visibility: visible;
+    opacity: 1; /* Opacity values */
+    /* Animation: Slide the label down */
+    transform: translateY(0.75rem); 
+}
