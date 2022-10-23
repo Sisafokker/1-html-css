@@ -1,0 +1,10 @@
+.btn {
+    background-color: #cea135;
+    color: #11122b;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    border: 1px solid #cea135; /* Put a border or certain browsers will do it for you with random css  */
+    border-radius: 10px; /* Rounded edges for the borders */
+    outline: none; /* No outline when clicked */
+    transition: 0.3s;
+}

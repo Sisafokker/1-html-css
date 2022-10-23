@@ -1,6 +1,4 @@
 input {
-    display: block;
-    padding: 10px 15px; 
-    border: none;
-    border-bottom: 2px solid red;
+    color: pink;
+    font-size: 15px;
 }
