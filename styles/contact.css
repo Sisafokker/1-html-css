@@ -1,0 +1,29 @@
+.contact-grid-wrapper {
+    width: 1000px;
+    display: grid;
+    /* 1 normal size, 1 THREE times its normal size */
+    grid-template-columns: 1fr 3fr; 
+    grid-gap: 100px; 
+}
+
+.company-metadata-sidebar-wrapper > .company-details-wrapper{
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 900; /* Bold text */
+    display: flex; 
+    justify-content: space-between; /* Distribucion de los divs internos */
+    align-items: center; /* Alinea verticalmente */
+
+    font-size: 1.25em;
+    text-align: right;  /* Alinea texto */
+    margin-bottom: 15px;
+}
+
+.company-metadata-sidebar-wrapper > .company-details-wrapper i {
+    margin-right: 20px;
+}
+
+.company-metadata-sidebar-wrapper > .logo img {
+    width: 100%; /* adapts to 100% of the width of the div it is inside of */
+    margin-bottom: 20px;
+
+}
